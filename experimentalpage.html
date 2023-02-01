@@ -1,8 +1,164 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="UTF-8">
     <title> You weren't supposed to find this!! </title>
 </head>
 <body>
+    <h1> Testing Area Here </h1>
+    <p> This <code>experimentalpage.html</code> is not supposed to be found by every user.</p>
+    <p> You are lucky for finding this page </p>
+    <pre> Th IS           tExT    
+        Is         Pre- f    o r ma tt      ed 
+    </pre>
+    <aside> 
+    <p>This is a test-ad for the game <b>Valorant</b>.</p>
+    </aside>
+    <article id="article1" lang="en-US">
+        <h2>Sentinels wins World Championships</h2>
+        <picture>
+            <source srcset="https://via.placeholder.com/300x500" media="(orientation: portrait)">
+            <img src ="https://via.placeholder.com/600x500" alt="Sentinels Team Picture">
+        </picture>
+        <p><s>Sentinels sucks!</s></p>
+        <p>Famously known player <span id="player">Tyson <i><strong>"Tenz"</strong></i> Ngo</span>, and rest of <em>teammates</em>...</p>
+        <div lang="fr">
+            <p>Famously known player Tyson <i><strong>"Tenz"</strong></i> Ngo, and rest of <em>teammates</em>...</p>
+        </div>
+        <p> Article hosted by<br>
+            Kyle's News Report<br>
+            CC 2023</p>
+    </article>
+    <section id="testiframe">
+        <h2> This is a score's page for competitive Valorant </h2>
+        <iframe src="https://www.vlr.gg/"></iframe>
+    </section>
+    <section id="testaudio">
+        <h2> Audio Testing </h2>
+        <audio controls>
+            <source src="https://file-examples.com/storage/fec6ed21bf63d96b49d1196/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <section id="testvideo">
+        <h2> Video Testing </h2>
+        <video controls>
+            <source src="https://file-examples.com/storage/fec6ed21bf63d96b49d1196/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section id="testcanvas">
+        <h2> Canvas Testing </h2>
+        <canvas>
+            Red Square
+        </canvas>
+        <script>
+            const canvas = document.querySelector("canvas");
+            const context = canvas.getContext("2d");
+            context.fillStyle = "red";
+            context.fillRect(20, 10, 75, 75)
+        </script>
+    </section>
+    <section id="testsvg">
+        <h2> SVG Testing </h2>
+        <svg>
+            <rect width="35" height="60"/>
+        </svg>
+    </section>
+    <section id ="testoptgroup">
+        <h2> Optgroup Testing </h2>
+        <label for="agent-select"> Choose an agent: </label>
+        <select id="agent-select">
+            <optgroup label="Controller">
+                <option> Omen </option>
+                <option> Astra </option>
+                <option> Viper </option>
+                <option> Harbor </option>
+                <option> Brimstone </option>
+            </optgroup>
+        </select>
+    </section>
+    <section id="testollist">
+        <h2> Ol testing </h2>
+        <ol>
+            <li> Tenz </li>
+            <li> Pancada </li>
+            <li> Sacy </li>
+            <li> Zekken </li>
+            <li> Dephh </li>
+        </ol>
+    </section>
+    <section id="testfieldset">
+        <h2> Fieldset Testing </h2>
+        <form>
+            <fieldset>
+                <legend> Who is your favorite Valorant player? </legend>
+                <input type="radio" id="tenz">
+                <label for="tenz">Tenz</label><br>
+
+                <input type="radio" id="marved">
+                <label for="marved">Marved</label><br>
+
+                <input type="radio" id="yay">
+                <label for="yay">Yay</label>
+            </fieldset>
+        </form>
+    </section>
+    <section id="testdatalist">
+        <h2> Datalist testing </h2>
+        <label for="choose-valorant-maps">Choose a map:</label>
+        <input list="valorant-maps" id="choose-valorant-maps" name="choose-valorant-maps">
+
+        <datalist id="valorant-maps">
+            <option value="Bind">
+            <option value="Ascent">
+            <option value="Split">
+            <option value="Pearl">
+            <option value="Lotus">
+        </datalist>
+    </section>
+    <section id="testdetails">
+        <h2> Details Testing </h2>
+        <details>
+            <summary>Details of my interest</summary>
+            A lot of these tests relate to the video game Valorant.
+        </details>
+    </section>
+    <section id="testtemplate">
+        <h2> Template Testing </h2>
+        <template>
+            <h3> Favorite Valorant Player </h3>
+            <p> My favorite valorant player is Tenz </p>
+        </template>
+    <section id="testtable">
+        <h2> Table Testing </h3>
+            <table>
+                <caption> Random table </caption>
+                <colgroup>
+                    <col>
+                    <col span="2" class="left">
+                    <col span="2" class="right">
+                </colgroup>
+                <tr>
+                    <td></td>
+                    <th scope="col"> Left1 </th>
+                    <th scope="col"> Left2 </th>
+                    <th scope="col"> Right1 </th>
+                    <th scope="col"> Right2 </th>
+                </tr>
+                <tr>
+                    <th scope="row"> Twix </th>>
+                    <td> Left Twix</td>
+                    <td> Left Twix 2</td>
+                    <td> Right Twix 1</td>
+                    <td> Right Twix 2</td>
+                </tr>
+            </table>
+        <section id="testfigure">
+            <h2> Figure Testing </h2>
+            <figure>
+                <img src="https://via.placeholder.com/300x500"
+                     alt="Random image">
+                <figcaption> A random image that is meant to be a placeholder until changed</figcaption>
+            </figure>
+        </section>
 </body>
 </html>
