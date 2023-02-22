@@ -144,6 +144,11 @@ nav a:visited {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* || BODY */ 
+.cover-text {
+  display: grid;
+}
+
 /* || FOOTER */
 
 footer {
