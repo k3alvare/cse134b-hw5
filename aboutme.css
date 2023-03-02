@@ -1,0 +1,62 @@
+main {
+    margin-top: 5.13rem;
+    width: 100%;
+    
+
+}
+
+main h2 {
+    width: fit-content;
+    color: white;
+    font-size: 2rem;
+    padding-left: 1.3rem;
+}
+
+main p {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items:center;
+    background-image: url("forest.jpeg");
+    background-blend-mode: screen;
+    padding: 1rem;
+}
+
+.container img {
+    box-shadow: 0px 0px 9px black;
+
+}
+
+.container p {
+    display: flex;
+    padding-left: 1em;
+}
+
+.hobbies-interests {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbies h3, .interests h3 {
+    font-size: 2rem;
+    border: 1px solid red;
+}
+
+.hobbies ul, .interests ul  {
+    list-style-type: none;
+}
+
+.hobbies-interests {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.hobbies-interests ul {
+    padding: 0;
+    list-style-type: none;
+    border: 1px solid red;
+}

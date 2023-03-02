@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Dialogs Test</title>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js'></script>
+</head>
+<body>
+    <button type="button" id="alert-btn">Alert</button>
+    <dialog id="alert-dialog">
+        <p> You have an alert! </p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+    <button type="button" id="confirm-btn">Confirm</button>
+    <dialog id="confirm-dialog">
+        <p> Do you really want to confirm? </p>
+        <form method="dialog">
+            <button id="dialog-cancel">Cancel</button>
+            <button id="dialog-yes">Yes</button>
+        </form>
+    </dialog>
+    <button type="button" id="prompt-btn">Prompt</button>
+        <dialog id="prompt-dialog">
+            <form>
+                <label for="prompt-input"> What is your name? </label>
+                <br></br>
+                <input type="text" id="prompt-input">
+                <button type="button" id="prompt-cancel-btn">Cancel</button>
+                <button type="button" id="prompt-submit-btn">Submit</button>
+            <form>
+        </dialog>
+    <br></br>
+    <output></output>
+    <script src="customdialogs.js"></script>
+</body>
+</html> 

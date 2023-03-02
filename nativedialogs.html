@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title> Native Dialogs </title>
+</head>
+<body>
+    <button type="button" id="alert-btn">Alert</button>
+    <button type="button" id="confirm-btn">Confirm</button>
+    <button type="button" id="prompt-btn">Prompt</button>
+    <button type="button" id="safer-prompt-btn">Safer Prompt</button>
+    <br></br>
+    <output></output>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js'></script>
+    <script>
+        let promptBtn = document.querySelector('#prompt-btn');
+        let saferBtn = document.querySelector('#safer-prompt-btn');
+        let output = document = document.querySelector('output');
+        function alertLoadHandler() {
+            let alertBtn= document.querySelector('#alert-btn');
+            alertBtn.addEventListener('click', alertHandler);
+        }
+        function alertHandler() {
+            alert("YOU HAVE CLICKED THIS BUTTON!");
+        }
+
+        window.addEventListener('DOMContentLoaded', alertLoadHandler);
+
+        function confirmLoadHandler(){
+            let confirmBtn = document.querySelector('#confirm-btn')
+            confirmBtn.addEventListener('click', confirmHandler);
+        }
+
+        function confirmHandler() {
+            let result = window.confirm('Are you sure you want to confirm?');
+            output.textContent = `The value returned by the confirm method is : ${result}`;
+        }
+
+        window.addEventListener('DOMContentLoaded', confirmLoadHandler)
+
+        promptBtn.addEventListener('click', () => {
+            let result = window.prompt('What is your name?');
+            if (result) {
+                output.textContent = `You entered: ${result}`;
+            } else {
+                output.textContent = "User didn't enter anything";
+            }
+        });
+
+        saferBtn.addEventListener('click', () => {
+            let result = window.prompt('What is your name?');
+            let purifiedResult = DOMPurify.sanitize(result);
+            if (purifiedResult) {
+                output.textContent = `You entered: ${purifiedResult}`;
+            } else {
+                output.textContent = "User didn't enter anything";
+            }
+        });
+
+    </script>
+</body>
+</html>

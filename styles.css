@@ -8,7 +8,13 @@
 @import url('https://fonts.cdnfonts.com/css/montserrat');
 @import url('https://fonts.cdnfonts.com/css/esteban'); 
 
+html {
+  overflow-y: scroll;
+}
 
+body {
+  position: absolute;
+}
 
 
 html, body {
@@ -21,19 +27,20 @@ html, body {
 }
 
 
+
 /* || HEADER and MAIN NAVIGATION */
 
 header {
     background: rgb(148, 242, 174);
     text-align: center;
     position: fixed;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
     z-index: 999;
     width: 100%;
 }
 
 
 h1 {
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
     /* float: left; */
     color: white;
     text-shadow: -1px 1px 0 #000;
@@ -146,22 +153,27 @@ nav a:visited {
 
 /* || BODY */ 
 .cover-text {
-  display: grid;
+  background-image: url("/Cover-Background.png");
+  background-color: rgb(191, 191, 191);
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 250px;
+  color: white;
 }
 
 /* || FOOTER */
 
 footer {
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #eee;
-    padding: 20px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 12px;
   }
   
   .footer-column-left,
@@ -174,6 +186,7 @@ footer {
   
   .footer-column-left {
     text-align: left;
+    padding-left: 1.5rem;
   }
   
   .footer-column-left h2 {
@@ -195,14 +208,15 @@ footer {
     margin-right: 10px;
   }
   
-  .social-links li:last-child {
-    margin-right: 0;
-  }
-  
   .social-links a {
-    color: #000;
+    color: #616161;
     text-decoration: none;
   }
+
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
   
   .footer-column-middle {
     text-align: center;
@@ -219,35 +233,32 @@ footer {
     display: flex;
     flex-direction:  column;
   }
-  
-  .navigation-links li {
-    margin-right: 10px;
-  }
-  
-  .navigation-links li:last-child {
-    margin-right: 0;
-  }
+
   
   .navigation-links a {
-    color: #000;
+    color: #616161;
     text-decoration: none;
   }
+
+  .navigation-links li:hover {
+    text-decoration: underline;
+  }
+  
   
   .footer-column-right {
     text-align: right;
-  }
-  
-  .footer-column-right h2 {
-    margin-bottom: 10px;
+    padding-right: 1.5rem;
   }
   
   form {
     display: flex;
     flex-direction: column;
+    
   }
   
   form label {
     margin-bottom: 5px;
+    color: #616161;
   }
   
   form input,
@@ -291,7 +302,6 @@ footer {
     nav {
         all: unset;
         left:initial;
-
         grid-column: 3 / 5;
         display: flex;
         justify-content: flex-end;
