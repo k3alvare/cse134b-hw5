@@ -43,7 +43,6 @@ main p {
 
 .hobbies h3, .interests h3 {
     font-size: 2rem;
-    border: 1px solid red;
 }
 
 .hobbies ul, .interests ul  {
@@ -52,19 +51,20 @@ main p {
 
 .hobbies-interests {
     text-align: center;
+    margin-top: -40px;
 } 
 
 .hobbies-interests ul {
     padding: 0;
     list-style-type: none;
-    border: 1px solid red;
+    margin-top: -20px;
 }
 
 #hobbies-interests-header {
+    margin-top: -10px;
     color: black;
     background-color: whitesmoke;
     width: 100%;
     text-align: center;
-    border: 1px solid red;
 }
 
