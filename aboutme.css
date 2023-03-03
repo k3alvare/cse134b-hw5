@@ -51,12 +51,20 @@ main p {
 }
 
 .hobbies-interests {
-    border: 1px solid red;
     text-align: center;
-}
+} 
 
 .hobbies-interests ul {
     padding: 0;
     list-style-type: none;
     border: 1px solid red;
 }
+
+#hobbies-interests-header {
+    color: black;
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    border: 1px solid red;
+}
+

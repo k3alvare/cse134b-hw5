@@ -19,21 +19,36 @@
         <label for="toggle-nav" class="toggle-nav-label">
             <span></span>
     </header>
-    <footer> 
-        <address class="contactInfo"> 
-                Email Address: <a href="mailto:kylealv0724@gmail.com"> kylealv0724@gmail.com </a><br>
-                Phone Number: (951) 486-1815 <br>
-                LinkedIn: <a href="https://www.linkedin.com/in/kyle-a-alvarez/">kyle-a-alvarez</a>
-                <p class="creationStamp"><small> Created by Kyle Alvarez</small></p>
-        </address>
-        <form action="contact_me.php">
-            <label for="name"> Name </label>
-            <input type="text" name="firstname" id="name" placeholder="Your name..">
-            <label for="email"> Email </label>
-            <input type="email" name="email" id="email" placeholder="Your email..">
-            <textarea name="comment" id="comment" cols="50" rows="10">Leave comment here</textarea>
+    <footer>
+        <section class="footer-column-left">
+          <h2>Kyle Alvarez</h2>
+          <p>This is my portfolio website showcasing my projects and skills. Connect with me on:</p>
+          <ul class="social-links">
+            <li><a href="https://github.com/k3alvare/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/kyle-a-alvarez/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/kyle.alvarez.581" target="_blank">Facebook</a></li>
+          </ul>
+        </section>
+        <section class="footer-column-middle">
+          <h2>Navigation</h2>
+          <ul class="navigation-links">
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </section>
+        <section class="footer-column-right">
+          <h2>Get in Touch</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
             <button type="submit">Submit</button>
-        </form>
-    </footer>
+          </form>
+        </section>
+      </footer>
 </body>
 </html>
