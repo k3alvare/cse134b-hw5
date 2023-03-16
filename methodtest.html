@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTTP with JavaScript</title>
+  </head>
+  <body>
+    <h1>HTTP with JavaScript</h1>
+    <form>
+      <label for="id">ID:</label>
+      <input type="number" id="id" name="id">
+      <br><br>
+
+      <label for="articleName">Article Name:</label>
+      <input type="text" id="articleName" name="articleName">
+      <br><br>
+
+      <label for="articleBody">Article Body:</label>
+      <textarea id="articleBody" name="articleBody"></textarea>
+      <br><br>
+
+      <label for="date">Date:</label>
+      <output id="date"></output>
+      <br><br>
+
+      <button id="postBtn" type="button">POST</button>
+      <button id="getBtn" type="button">GET</button>
+      <button id="putBtn" type="button">PUT</button>
+      <button id="deleteBtn" type="button">DELETE</button>
+    </form>
+
+    <hr>
+
+    <h2>Response:</h2>
+    <output id="response"></output>
+
+    <script src="methodtest.js"></script>
+  </body>
+</html>
